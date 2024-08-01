@@ -14,12 +14,10 @@ public class AddPlace {
 	private String address;
 	private String website;
 	private String language;
-	
+
 	private Location location;
 	private List<String> types;
 
-	
-	
 	public int getAccuracy() {
 		return accuracy;
 	}

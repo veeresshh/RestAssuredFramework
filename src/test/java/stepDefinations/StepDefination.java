@@ -23,7 +23,7 @@ public class StepDefination extends Utilities {
 	RequestSpecification res;
 	ResponseSpecification resspec;
 	Response response;
-	
+
 	static String place_id;
 
 	TestDataBuild Data = new TestDataBuild();
@@ -73,12 +73,11 @@ public class StepDefination extends Utilities {
 		String ActualName = getJsonPath(response, "name");
 		assertEquals(ActualName, ExpectedName);
 	}
-	
+
 	@Given("DeletePlace Payload")
 	public void deleteplace_payload() throws IOException {
-	    
-		res =given().spec(requestSpecifications()).body(Data.deletePlacePayload(place_id));
-	}
 
+		res = given().spec(requestSpecifications()).body(Data.deletePlacePayload(place_id));
+	}
 
 }
